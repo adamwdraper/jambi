@@ -1,0 +1,77 @@
+.ui-header {
+  padding: 1em 1em 0;
+  border-bottom: 1px solid $color-border;
+  background-color: $color-gray-lightest;
+
+  .intro {
+    display: flex;
+    align-items: center;
+
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid $color-border;
+      background-color: white;
+      flex-shrink: 0;
+
+      .background {
+        @include square(3.5em);
+        display: block;
+        border-radius: 50%;
+        margin: .15em;
+        background-color: $color-green;
+      }
+    }
+
+    h1 {
+      flex: 1;
+      font-size: 1.1em;
+      margin: 0 0 0 1em;
+      text-transform: uppercase;
+      color: $color-gray-dark;
+    }
+  }
+
+  nav {
+    margin-top: 1em;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: .25em .65em;
+    border-bottom: 0;
+    border-right: 0;
+    position: relative;
+
+    &.active {
+      border: 1px solid $color-border;
+      border-bottom: 0;
+      border-radius: $layout-border-radius $layout-border-radius 0 0;
+      background: white;
+
+      &:after {
+        content: "";
+        border-bottom: 1px solid white;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        z-index: 1;
+      }
+    }
+  }
+
+  a {
+    font-weight: 300;
+    font-size: .9em;
+  }
+}

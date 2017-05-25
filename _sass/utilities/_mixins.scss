@@ -1,0 +1,41 @@
+@mixin position ($top, $right, $bottom, $left) {
+  @if $top {
+    top: $top;
+  }
+  @if $right {
+    right: $right;
+  }
+  @if $bottom {
+    bottom: $bottom;
+  }
+  @if $left {
+    left: $left;
+  }
+}
+
+// Sizing shortcuts
+// -------------------------
+@mixin size($height, $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin ellipsis-overflow () {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Circles
+@mixin circle($diameter) {
+  line-height: $diameter;
+  width: $diameter;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}

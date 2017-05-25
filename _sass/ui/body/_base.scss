@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-sans-family;
+  color: $color-text;
+}
+
+h1 {
+  letter-spacing: .05em;
+  font-size: 2em;
+  font-family: $font-serif-family;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s;
+  color: $color-text;
+
+  &:hover {
+    color: $color-blue-light;
+  }
+
+  &:active,
+  &:visited {
+    color: $color-text;
+  }
+}
