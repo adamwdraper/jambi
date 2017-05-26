@@ -1,10 +1,12 @@
+{% assign link = site.data.nav.links | where:"url",page.url | first %}
+
 <header class="ui-header">
   <div class="wrapper">
     <div class="intro">
       <div class="image">
         <div class="background"></div>
       </div>
-      <h1>I live to create in many mediums</h1>
+      <h1>{{ link.tag }}</h1>
     </div>
     <nav>
       <ul>
