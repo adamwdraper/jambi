@@ -8,12 +8,11 @@
     </div>
     <nav>
       <ul>
-        <li>
-          <a href="code.html">code</a>
-        </li>
-        <li>
-          <a href="electronics.html">electronics</a>
-        </li>
+        {% for item in site.data.nav.links %}
+          <li class="{% if item.url == page.url %}active{% endif %}">
+            <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
       </ul>
     </nav>
   </div>

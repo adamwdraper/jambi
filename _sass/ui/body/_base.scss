@@ -11,7 +11,7 @@ body {
 
 h1 {
   letter-spacing: .05em;
-  font-size: 2em;
+  font-size: 1.85em;
   font-family: $font-serif-family;
 }
 
@@ -19,6 +19,7 @@ a {
   text-decoration: none;
   transition: color 0.3s;
   color: $color-text;
+  cursor: pointer;
 
   &:hover {
     color: $color-blue-light;
