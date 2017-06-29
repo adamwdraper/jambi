@@ -1,9 +1,5 @@
 links:
 
-- title: home
-  tag: I live to create in many mediums
-  url: /
-
 - title: code
   tag: move some pixels around
   url: /code.html

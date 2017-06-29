@@ -1,18 +1,16 @@
-{% assign link = site.data.nav.links | where:"url",page.url | first %}
-
 <header class="ui-header">
   <div class="wrapper">
     <div class="intro">
       <div class="image">
         <div class="background"></div>
       </div>
-      <h1>{{ link.tag }}</h1>
+      <h1></h1>
     </div>
     <nav>
       <ul>
-        {% for item in site.data.nav.links %}
-          <li class="{% if item.url == page.url %}active{% endif %}">
-            <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+        {% for link in site.data.nav.links %}
+          <li class="{% if link.title == page.category %}active{% endif %}">
+            <a href="{{ link.url }}" alt="{{ link.title }}">{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>

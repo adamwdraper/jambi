@@ -24,7 +24,24 @@ url: "http://example.com" # the base hostname & protocol for your site, e.g. htt
 twitter_username: username
 github_username: username
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
 # Build settings
+sass:
+  style: compressed
+markdown: kramdown
 theme: jambi
 exclude:
   - Gemfile
