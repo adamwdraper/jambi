@@ -3,6 +3,11 @@
   border-bottom: 1px solid $color-border;
   background-color: $color-gray-lightest;
 
+  .wrapper {
+    max-width: $layout-wrapper-max-width;
+    margin: auto;
+  }
+
   .intro {
     display: flex;
     align-items: center;

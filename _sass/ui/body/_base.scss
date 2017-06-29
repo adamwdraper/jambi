@@ -7,13 +7,26 @@ body {
 body {
   font-family: $font-sans-family;
   color: $color-text;
+  font-weight: 300;
 }
 
 h1 {
   letter-spacing: .05em;
-  font-size: 1.85em;
+  font-size: 1.75em;
   font-family: $font-serif-family;
   margin: .25em 0;
+}
+
+h2 {
+  letter-spacing: .05em;
+  font-size: 1.35em;
+  color: $color-gray-dark;
+  font-weight: 300;
+  margin: .5em 0 .25em;
+}
+
+p {
+  margin: .5em 0;
 }
 
 a {
@@ -30,4 +43,11 @@ a {
   &:visited {
     color: $color-text;
   }
+}
+
+time {
+  display: block;
+  font-size: .8em;
+  color: $color-gray;
+  font-weight: 300;
 }

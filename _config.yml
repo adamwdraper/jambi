@@ -39,6 +39,8 @@ defaults:
       layout: "page"
 
 # Build settings
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+permalink: pretty
 sass:
   style: compressed
 markdown: kramdown

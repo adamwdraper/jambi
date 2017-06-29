@@ -1,5 +1,8 @@
 .ui-main {
   padding: 1em 1em 0;
 
-  
+  .wrapper {
+    max-width: $layout-wrapper-max-width;
+    margin: auto;
+  }
 }

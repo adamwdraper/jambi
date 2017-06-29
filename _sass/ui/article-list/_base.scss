@@ -1,0 +1,14 @@
+article-list {
+
+  article {
+    margin: 4em 0;
+
+    excerpt {
+
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
