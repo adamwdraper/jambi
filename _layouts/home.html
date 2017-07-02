@@ -1,4 +1,20 @@
 ---
 layout: default
 ---
-<h1>Home</h1>
+<article-list>
+  {% for post in site.posts %}
+    <article>
+      <a class="article-link" href="{{ post.url }}">
+        <header>
+          <h1>{{ post.title | escape }}</h1>
+          <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+        </header>
+        <content>
+          <excerpt>
+            {{ post.excerpt }}
+          </excerpt>
+        </content>
+      </a>
+    </article>
+  {% endfor %}
+</article-list>
