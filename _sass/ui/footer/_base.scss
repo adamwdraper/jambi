@@ -1,0 +1,51 @@
+.ui-footer {
+  margin-top: 2em;
+
+  .wrapper {
+    max-width: $layout-wrapper-max-width;
+    margin: auto;
+    border-top: 1px solid $color-border;
+    padding: 2em 0;
+  }
+
+  nav {
+    font-size: .85em;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: .35em .75em;
+    border-bottom: 0;
+    border-right: 0;
+    position: relative;
+
+    &:not(:last-child) {
+
+      &:after {
+        content: " | ";
+        color: $color-border;
+        padding: .35em .75em;
+      }
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    a {
+      font-weight: 300;
+    }
+  }
+
+  .copy {
+    font-size: .75em;
+    margin-top: 1em;
+    color: $color-gray-dark;
+  }
+}
