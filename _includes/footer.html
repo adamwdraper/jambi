@@ -1,0 +1,13 @@
+<footer class="ui-footer">
+  <div class="wrapper">
+    <nav>
+      <ul>
+        {% for link in site.data.nav.links %}
+          <li class="{% if link.title == page.category %}active{% endif %}">
+            <a href="{{ link.url }}" alt="{{ link.title }}">{{ link.title | capitalize }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

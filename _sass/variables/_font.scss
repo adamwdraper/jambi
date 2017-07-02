@@ -1,2 +1,12 @@
+@font-face {
+  font-family: 'jambi';
+  src:
+    url('fonts/jambi.ttf?mawe0g') format('truetype'),
+    url('fonts/jambi.woff?mawe0g') format('woff'),
+    url('fonts/jambi.svg?mawe0g#jambi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $font-sans-family: 'Roboto', sans-serif;
 $font-serif-family: 'Roboto Slab', serif;
