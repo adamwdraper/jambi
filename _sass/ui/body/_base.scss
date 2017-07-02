@@ -33,7 +33,7 @@ a {
   text-decoration: none;
   transition: color 0.3s;
   color: $color-text;
-  cursor: pointer;
+  cursor: default;
 
   &:hover {
     color: $color-blue-light;

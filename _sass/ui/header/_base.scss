@@ -1,7 +1,8 @@
 .ui-header {
   padding: 1em 1em 0;
   border-bottom: 1px solid $color-border;
-  background-color: $color-gray-lightest;
+  background: $color-header-top; /* fallback for old browsers */
+  background: linear-gradient(to bottom, $color-header-top, $color-header-bottom);
 
   .wrapper {
     max-width: $layout-wrapper-max-width;
@@ -21,22 +22,31 @@
       border: 1px solid $color-border;
       background-color: white;
       flex-shrink: 0;
+      padding: .25em;
 
       .background {
         @include square(3.5em);
+        background: url("/assets/images/photo.jpg") center no-repeat;
+        background-size: contain;
         display: block;
         border-radius: 50%;
-        margin: .15em;
-        background-color: $color-green;
       }
     }
 
-    h1 {
+    .info {
       flex: 1;
-      font-size: 1.1em;
       margin: 0 0 0 1em;
-      text-transform: uppercase;
-      color: $color-gray-dark;
+
+      .name {
+        font-size: 1.25em;
+        text-transform: uppercase;
+      }
+
+      .tagline {
+        font-size: .85em;
+        margin: .25em 0;
+        color: $color-gray-dark;
+      }
     }
   }
 
@@ -52,7 +62,8 @@
   }
 
   li {
-    padding: .25em .65em;
+    padding: .35em .75em;
+    margin: 0 .25em;
     border-bottom: 0;
     border-right: 0;
     position: relative;
@@ -63,20 +74,28 @@
       border-radius: $layout-border-radius $layout-border-radius 0 0;
       background: white;
 
+      a {
+        color: $color-text;
+      }
+
       &:after {
         content: "";
-        border-bottom: 1px solid white;
+        border-bottom: 3px solid white;
         position: absolute;
         width: 100%;
         left: 0;
-        bottom: -1px;
+        bottom: -2px;
         z-index: 1;
       }
     }
-  }
 
-  a {
-    font-weight: 300;
-    font-size: .9em;
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      font-weight: 300;
+      color: $color-link;
+    }
   }
 }

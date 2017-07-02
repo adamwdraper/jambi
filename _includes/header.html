@@ -1,11 +1,20 @@
+{% if page.category %}
+  {% assign taglineItem = site.data.nav.links | where:"category",page.category | first %}
+{% else %}
+  {% assign taglineItem = site %}
+{% endif %}
+
 <header class="ui-header">
   <div class="wrapper">
-    <div class="intro">
+    <a href="{{ site.url }}" class="intro">
       <div class="image">
         <div class="background"></div>
       </div>
-      <h1></h1>
-    </div>
+      <div class="info">
+        <h1 class="name">{{ site.name }}</h1>
+        <p class="tagline">{{ taglineItem.tagline }}</p>
+      </div>
+    </a>
     <nav>
       <ul>
         {% for link in site.data.nav.links %}
