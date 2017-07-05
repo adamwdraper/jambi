@@ -1,18 +1,6 @@
 <footer class="ui-footer">
   <div class="wrapper">
     {% include accounts.html %}
-    <nav>
-      <ul>
-        <li>
-          <a href="/" alt="Home">{{ "home" | capitalize }}</a>
-        </li>
-        {% for link in site.data.nav.links %}
-          <li>
-            <a href="{{ link.url }}" alt="{{ link.title }}">{{ link.title | capitalize }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
     <p class="copy">
       &copy; {{ 'now' | date: "%Y" }} {{ site.me.name }}
     </p>

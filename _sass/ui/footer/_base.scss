@@ -1,50 +1,16 @@
 .ui-footer {
-  margin-top: 2em;
+  margin-top: 1em;
   padding: 0 1em 1em;
 
   .wrapper {
     max-width: $layout-wrapper-max-width;
     margin: auto;
     border-top: 1px solid $color-border;
-    padding: 2em 0;
-  }
-
-  nav {
-    font-size: .85em;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    border-bottom: 0;
-    border-right: 0;
-    position: relative;
-
-    &:not(:last-child) {
-
-      &:after {
-        content: "/";
-        color: $color-seperator;
-        padding: .35em .75em;
-      }
-    }
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    a {
-      font-weight: 300;
-    }
+    padding: 1em 0;
   }
 
   .usernames {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     font-size: 1.25em;
 
     a {
@@ -61,6 +27,6 @@
   .copy {
     font-size: .65em;
     margin-top: 1em;
-    color: $color-gray-dark;
+    color: $color-gray-light;
   }
 }
