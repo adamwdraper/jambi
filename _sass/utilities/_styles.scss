@@ -1,0 +1,14 @@
+// It makes math dead simple. - http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+* {
+  box-sizing: border-box;
+}
+
+// Bonus Clearfix Style --------------------------------
+.clearfix {
+
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}

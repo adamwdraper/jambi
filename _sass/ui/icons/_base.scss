@@ -1,0 +1,41 @@
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jambi' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  transition: color 0.3s;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.github:before {
+    content: "\e900";
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+
+  &.linkedin:before {
+    content: "\e901";
+
+    &:hover {
+      color: #0077b5;
+    }
+  }
+
+  &.twitter:before {
+    content: "\e902";
+
+    &:hover {
+      color: #1da1f2;
+    }
+  }
+}

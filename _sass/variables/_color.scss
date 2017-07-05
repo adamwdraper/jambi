@@ -1,0 +1,36 @@
+// Grays -------------------------
+$color-black: #0A0D0F;
+$color-gray-darkest: #202324;
+$color-gray-darker: #3E4142;
+$color-gray-dark: #66696A;
+$color-gray: #858889;
+$color-gray-light: #C0C3C4;
+$color-gray-lighter: #DCDFE0;
+$color-gray-lighterest: #EDF0F1;
+$color-gray-lightest: #F6F9FA;
+$color-gray-white: #FAFCFF;
+$color-white: #FFFFFF;
+
+// LogicHub colors
+$color-blue: #167FBC;
+$color-blue-light: #1BC3F3;
+$color-green: #50C574;
+$color-yellow: lighten(#F3E61A, 15%);
+$color-orange: #E8AA14;
+$color-red: #DB3B23;
+$color-purple: #744FC6;
+$color-pink: #FF2E6C;
+
+// Social colors
+$color-twitter: #00aced;
+$color-linkedin: #007bb6;
+
+// Base Colors ---------------------
+$color-text: $color-gray-darker;
+$color-link: $color-blue-light;
+$color-border: $color-gray-lighterest;
+$color-seperator: $color-gray-lighter;
+
+// Header gradient
+$color-header-top: $color-gray-lightest;
+$color-header-bottom: $color-gray-lightest;

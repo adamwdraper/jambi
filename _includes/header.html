@@ -1,0 +1,28 @@
+{% if page.category %}
+  {% assign taglineItem = site.data.nav.links | where:"category",page.category | first %}
+{% else %}
+  {% assign taglineItem = site.me %}
+{% endif %}
+
+<header class="ui-header">
+  <div class="wrapper">
+    <a href="{{ site.url }}" class="intro">
+      <div class="image">
+        <div class="background"></div>
+      </div>
+      <div class="info">
+        <h1 class="name">{{ site.me.name }}</h1>
+        <p class="tagline">{{ taglineItem.tagline }}</p>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        {% for link in site.data.nav.links %}
+          <li class="{% if link.title == page.category %}active{% endif %}">
+            <a href="{{ link.url }}" alt="{{ link.title }}">{{ link.title | capitalize }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

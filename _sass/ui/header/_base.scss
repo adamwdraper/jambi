@@ -1,0 +1,102 @@
+.ui-header {
+  padding: 1em 1em 0;
+  border-bottom: 1px solid $color-border;
+  background: $color-header-top; /* fallback for old browsers */
+  background: linear-gradient(to bottom, $color-header-top, $color-header-bottom);
+
+  .wrapper {
+    max-width: $layout-wrapper-max-width;
+    margin: auto;
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid $color-border;
+      background-color: white;
+      flex-shrink: 0;
+      padding: .25em;
+
+      .background {
+        @include square(3.5em);
+        background: url("/assets/images/header/me.jpg") center no-repeat;
+        background-size: contain;
+        display: block;
+        border-radius: 50%;
+      }
+    }
+
+    .info {
+      flex: 1;
+      margin: 0 0 0 1em;
+
+      .name {
+        font-size: 1.25em;
+        text-transform: uppercase;
+      }
+
+      .tagline {
+        font-size: .85em;
+        margin: .25em 0;
+        color: $color-gray-dark;
+      }
+    }
+  }
+
+  nav {
+    margin-top: 1em;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: .35em .75em;
+    margin: 0 .25em;
+    border-bottom: 0;
+    border-right: 0;
+    position: relative;
+    border-top: 1px solid transparent;
+
+    &.active {
+      border: 1px solid $color-border;
+      border-bottom: 0;
+      border-radius: $layout-border-radius $layout-border-radius 0 0;
+      background: white;
+
+      a {
+        color: $color-text;
+      }
+
+      &:after {
+        content: "";
+        border-bottom: 3px solid white;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -2px;
+        z-index: 1;
+      }
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      font-weight: 300;
+      color: $color-link;
+    }
+  }
+}
