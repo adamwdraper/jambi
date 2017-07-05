@@ -22,9 +22,10 @@ me:
   email: your-email@domain.com
   about: > # this means to ignore newlines until "baseurl:"
     Write an awesome description for your new site here. You can edit this
-  twitter_username: username
-  linkedin_username: username
-  github_username: username
+  username:
+    twitter: username
+    github: username
+    linkedin: username
 
 # Html settings
 title: Your title

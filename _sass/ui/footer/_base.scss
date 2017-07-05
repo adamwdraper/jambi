@@ -1,5 +1,6 @@
 .ui-footer {
   margin-top: 2em;
+  padding: 0 1em 1em;
 
   .wrapper {
     max-width: $layout-wrapper-max-width;
@@ -42,8 +43,23 @@
     }
   }
 
+  .usernames {
+    margin-bottom: 1.5em;
+    font-size: 1.25em;
+
+    a {
+      margin-right: 1em;
+      vertical-align: middle;
+      color: $color-gray-dark;
+
+      &.email {
+        font-size: .85rem;
+      }
+    }
+  }
+
   .copy {
-    font-size: .75em;
+    font-size: .65em;
     margin-top: 1em;
     color: $color-gray-dark;
   }

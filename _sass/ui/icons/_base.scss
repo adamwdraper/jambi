@@ -8,6 +8,8 @@ i {
   text-transform: none;
   line-height: 1;
   display: inline-block;
+  vertical-align: middle;
+  transition: color 0.3s;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -15,10 +17,25 @@ i {
 
   &.github:before {
     content: "\e900";
+
+    &:hover {
+      color: $color-text;
+    }
   }
 
   &.linkedin:before {
     content: "\e901";
-    color: #0077b5;
+
+    &:hover {
+      color: #0077b5;
+    }
+  }
+
+  &.twitter:before {
+    content: "\e902";
+
+    &:hover {
+      color: #1da1f2;
+    }
   }
 }
