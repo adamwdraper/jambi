@@ -20,7 +20,6 @@
   }
 
   li {
-    padding: .35em .75em;
     border-bottom: 0;
     border-right: 0;
     position: relative;
@@ -28,8 +27,8 @@
     &:not(:last-child) {
 
       &:after {
-        content: " | ";
-        color: $color-border;
+        content: "/";
+        color: $color-seperator;
         padding: .35em .75em;
       }
     }

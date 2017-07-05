@@ -1,0 +1,18 @@
+<article>
+  <a class="article-link" href="{{ include.post.url }}">
+    <header>
+      <h1>{{ include.post.title | escape }}</h1>
+      <p class="info">
+        <time>{{ include.post.date | date: "%b %-d, %Y" }}</time>
+        {% if include.category %}
+          <category>{{ include.post.category }}</category>
+        {% endif %}
+      </p>
+    </header>
+    <content>
+      <excerpt>
+        {{ include.post.excerpt }}
+      </excerpt>
+    </content>
+  </a>
+</article>

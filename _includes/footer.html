@@ -2,8 +2,11 @@
   <div class="wrapper">
     <nav>
       <ul>
+        <li>
+          <a href="/" alt="Home">{{ "home" | capitalize }}</a>
+        </li>
         {% for link in site.data.nav.links %}
-          <li class="{% if link.title == page.category %}active{% endif %}">
+          <li>
             <a href="{{ link.url }}" alt="{{ link.title }}">{{ link.title | capitalize }}</a>
           </li>
         {% endfor %}

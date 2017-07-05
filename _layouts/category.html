@@ -2,19 +2,7 @@
 layout: default
 ---
 <article-list>
-  {% for post in site.categories.code %}
-    <article>
-      <a class="article-link" href="{{ post.url }}">
-        <header>
-          <h1>{{ post.title | escape }}</h1>
-          <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-        </header>
-        <content>
-          <excerpt>
-            {{ post.excerpt }}
-          </excerpt>
-        </content>
-      </a>
-    </article>
+  {% for post in site.categories[page.category] %}
+    {% include article-summary.html post=post %}
   {% endfor %}
 </article-list>
