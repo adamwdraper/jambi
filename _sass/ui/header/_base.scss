@@ -26,7 +26,7 @@
 
       .background {
         @include square(3.5em);
-        background: url("/assets/images/photo.jpg") center no-repeat;
+        background: url("/assets/images/header/me.jpg") center no-repeat;
         background-size: contain;
         display: block;
         border-radius: 50%;

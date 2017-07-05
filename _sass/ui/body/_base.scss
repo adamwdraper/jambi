@@ -1,3 +1,10 @@
+%body-sub-header {
+  letter-spacing: .05em;
+  color: $color-gray-dark;
+  font-weight: 300;
+  margin: .5em 0 .25em;
+}
+
 html,
 body {
   margin: 0;
@@ -18,11 +25,13 @@ h1 {
 }
 
 h2 {
-  letter-spacing: .05em;
+  @extend %body-sub-header;
   font-size: 1.35em;
-  color: $color-gray-dark;
-  font-weight: 300;
-  margin: .5em 0 .25em;
+}
+
+h3 {
+  @extend %body-sub-header;
+  font-size: 1.15em;
 }
 
 p {
@@ -37,6 +46,22 @@ a {
   &:active,
   &:visited {
     color: $color-text;
+  }
+}
+
+figure {
+  margin: 1em 0;
+
+  &.highlight {
+
+    pre {
+      font-size: .9em;
+      border: 1px solid $color-border;
+      background-color: $color-gray-lightest;
+      padding: 1em;
+      overflow: auto;
+      border-radius: $layout-border-radius;
+    }
   }
 }
 
