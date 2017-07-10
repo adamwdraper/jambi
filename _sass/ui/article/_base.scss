@@ -1,0 +1,56 @@
+article {
+
+  header {
+    margin-bottom: 1.5em;
+
+    .info {
+      margin-top: 0;
+    }
+
+    category {
+      text-transform: capitalize;
+
+      &:before {
+        content: "/ ";
+        color: $color-seperator;
+        padding: 0 .25em;
+      }
+    }
+  }
+
+  content {
+
+    p {
+      line-height: 1.35em;
+      margin: .75em 0;
+    }
+  }
+
+  iframe,
+  img {
+    max-width: 100%;
+    max-height: 25em;
+    padding: $layout-border-radius;
+    border: 1px solid $color-border;
+    border-radius: $layout-border-radius;
+    overflow: hidden;
+    display: block;
+    margin: 2em auto;
+  }
+
+  figure {
+    margin: 1em 0;
+
+    &.highlight {
+
+      pre {
+        font-size: .9em;
+        border: 1px solid $color-border;
+        background-color: $color-gray-lightest;
+        padding: 1em;
+        overflow: auto;
+        border-radius: $layout-border-radius;
+      }
+    }
+  }
+}

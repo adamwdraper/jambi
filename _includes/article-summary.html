@@ -2,6 +2,9 @@
   <a class="article-link" href="{{ include.post.url }}">
     <header>
       <h1>{{ include.post.title | escape }}</h1>
+      {% if include.post.subtitle %}
+        <h2>{{ include.post.subtitle | escape }}</h2>
+      {% endif %}
       <p class="info">
         <time>{{ include.post.date | date: "%b %-d, %Y" }}</time>
         {% if include.category %}
