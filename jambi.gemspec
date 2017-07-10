@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Adam Draper"]
   spec.email         = [""]
 
-  spec.summary       = "A Jekyll Theme"
+  spec.summary       = "A minimal Jekyll theme for documenting things you've built"
   spec.homepage      = "https://github.com/adamwdraper/jambi"
   spec.license       = "MIT"
 
