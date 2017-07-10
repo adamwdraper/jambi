@@ -18,6 +18,14 @@ article {
     }
   }
 
+  content {
+
+    p {
+      line-height: 1.35em;
+      margin: .75em 0;
+    }
+  }
+
   iframe,
   img {
     max-width: 100%;
@@ -28,10 +36,6 @@ article {
     overflow: hidden;
     display: block;
     margin: 2em auto;
-  }
-
-  .caption {
-
   }
 
   figure {

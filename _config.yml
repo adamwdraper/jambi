@@ -27,7 +27,7 @@ me:
     github: username
     linkedin: username
 
-# Html settings
+# Site settings
 title: Your title
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
