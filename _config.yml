@@ -30,9 +30,7 @@ me:
   name: Your Name
   tagline: These are the things I create
   photo: "/images/header/me.jpg"
-  about: > # this means to ignore newlines until "baseurl:"
-    Write an awesome description for your new site here. You can edit this
-ga: UA-XXXXXXXXX-X
+google_analytics: UA-XXXXXXXXX-X
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 permalink: pretty
 highlighter: rouge

@@ -1,6 +1,6 @@
 # jambi
 
-A minimal Jekyll theme for documenting things you've built
+A minimal Jekyll theme for documenting things you've built.
 
 ## Installation
 
@@ -26,7 +26,52 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+## Customizing
+
+### Configuration variables
+
+After installation, copy (then customize) these settings into your site's `_.config.yml` file:
+
+```yaml
+# Jambi settings
+me:
+  name: Your Name
+  tagline: These are the things I create
+  photo: "/images/header/me.jpg"
+google_analytics: UA-XXXXXXXXX-X
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+permalink: pretty
+highlighter: rouge
+sass:
+  style: compressed
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+```
+
+### Stylesheet
+
+If you'd like to add your own custom styles:
+
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
+
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
 ## Contributing
 
