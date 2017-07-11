@@ -1,0 +1,12 @@
+<header>
+  <h1 itemprop="name headline">{{ include.post.title | escape }}</h1>
+  {% if include.post.subtitle %}
+    <h2>{{ include.post.subtitle | escape }}</h2>
+  {% endif %}
+  <p class="info">
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.post.date | date: "%b %-d, %Y" }}</time>
+    {% if include.post.category %}
+      <category>{{ include.post.category }}</category>
+    {% endif %}
+  </p>
+</header>

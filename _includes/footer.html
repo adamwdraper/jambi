@@ -5,4 +5,7 @@
       &copy; {{ 'now' | date: "%Y" }} {{ site.me.name }}
     </p>
   </div>
-</header>
+</footer>
+{% if jekyll.environment == "production" %}
+  {% include analytics.html %}
+{% endif %}
