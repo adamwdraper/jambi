@@ -1,6 +1,6 @@
 # jambi
 
-A minimal Jekyll theme for documenting things you've built.
+A minimal Jekyll theme for documenting things you've created.
 
 ## Installation
 
