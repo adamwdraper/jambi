@@ -7,7 +7,7 @@
       {% endif %}
       <p class="info">
         <time>{{ include.post.date | date: "%b %-d, %Y" }}</time>
-        {% if include.category %}
+        {% if include.post.category %}
           <category>{{ include.post.category }}</category>
         {% endif %}
       </p>
