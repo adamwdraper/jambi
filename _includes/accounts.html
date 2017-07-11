@@ -1,14 +1,14 @@
 <p class="usernames">
-  {% if site.me.username.github %}
-    <a href="https://github.com/{{ site.me.username.github }}"><i class="github"></i></a>
+  {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}"><i class="github"></i></a>
   {% endif %}
-  {% if site.me.username.twitter %}
-    <a href="https://twitter.com/{{ site.me.username.twitter }}"><i class="twitter"></i></a>
+  {% if site.twitter_username %}
+    <a href="https://twitter.com/{{ site.twitter_username }}"><i class="twitter"></i></a>
   {% endif %}
-  {% if site.me.username.linkedin %}
-    <a href="https://linkedin.com/{{ site.me.username.linkedin }}"><i class="linkedin"></i></a>
+  {% if site.linkedin_username %}
+    <a href="https://linkedin.com/{{ site.linkedin_username }}"><i class="linkedin"></i></a>
   {% endif %}
-  {% if site.me.email %}
-    <a class="email" href="mailto:{{ site.me.email }}">{{ site.me.email }}</a>
+  {% if site.email %}
+    <a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a>
   {% endif %}
 </p>
